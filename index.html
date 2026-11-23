@@ -1,742 +1,1069 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html class="js" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shah Firizki Azmi</title>
-    <link rel="stylesheet" href="stayle.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:wght@300..800&family=Playfair+Display:wght@400..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Shah Firizki Azmi — Data Analyst Portfolio</title>
+<meta content="Portfolio of Shah Firizki Azmi, Informatics graduate (S.Kom) and Data Analyst &amp; Automation Developer. Data analysis, dashboards, machine learning and process automation." name="description"/>
+<meta content="#201e1a" name="theme-color"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://images.unsplash.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100..900&amp;family=Caveat+Brush&amp;family=Anton&amp;display=swap" rel="stylesheet"/>
+<link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" referrerpolicy="no-referrer" rel="stylesheet"/>
+<link href="stayle.css" rel="stylesheet"/>
 </head>
 <body>
-    <div id="loading-screen">
-  <div class="loading-content">
-    <i class="fa-solid fa-laptop-code fa-5x main-icon hidden"></i>
-
-    <h1 id="loading-text" class="hidden">MY PROFILE</h1>
-
-    <div class="sub-icons">
-      <i class="fa-brands fa-github fa-2x hidden"></i>
-      <i class="fa-solid fa-code fa-2x hidden"></i>
-      <i class="fa-solid fa-user fa-2x hidden"></i>
-    </div>
-
-    <h2 id="designer-text" class="hidden">Designed by Shah Firizki Azmi</h2>
-  </div>
+<div class="scroll-progress" id="scroll-progress"></div>
+<!-- ================= FIXED UI (nav tags + case UI) ================= -->
+<div class="ui" id="ui">
+<button class="tag t1 pre" data-i18n="k248" id="tag-home">home</button>
+<button class="tag t2 pre" data-i18n="k249" id="tag-projects">projects</button>
+<button class="logo-c" id="logo-c">SHAH FIRIZKI AZMI</button>
+<button aria-label="Switch language" class="tag t-lang pre" id="tag-lang"><span data-l="en">EN</span><i>/</i><span data-l="id">ID</span></button>
+<a class="tag t3 pre" data-i18n="k250" href="#menu" id="tag-menu">menu</a>
+<a class="tag t4 pre" data-i18n="k251" href="#contact" id="tag-hire">hire me</a>
+<!-- case UI -->
+<div class="ticket" id="ticket">
+<i class="hole h1"></i><i class="hole h2"></i><i class="hole h3"></i><i class="hole h4"></i>
+<h2 id="tk-title">SICER</h2>
+<div class="rows"><div id="tk-r1"></div><div id="tk-r2"></div><div id="tk-r3"></div></div>
+<a class="tk-link" href="#" id="tk-link" rel="noopener" target="_blank">view project <svg viewbox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"></path></svg></a>
 </div>
-    <header class="header-list">
-        <div class="div-list ">
-            <ul class="ul-list">
-                <li class="active">
-                    <i class="fa-regular fa-house"></i>
-                    <a href="#home">Home</a>
-                </li>
-                <li>
-                    <i class="fa-regular fa-address-card"></i>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <i class="fa-regular fa-folder-open"></i>
-                    <a href="#project">Projects</a>
-                </li>
-                 <li>
-                    <i class="fa-solid fa-briefcase"></i>
-                    <a href="#experience">Experience</a>
-                </li>
-              
-                <li>
-                    <i class="fa-solid fa-code"></i>
-                    <a href="#services">services</a>
-                </li>
-                <li>
-                    <i class="fa-regular fa-envelope"></i>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </header>
-    <!-- home -->
-    <section class="home" id="home">
-        <p class="home-p">
-            
-        </p>
-        <div class="home-container">
-        <div class="home-section">
-            <div class="info-home">
-                <h1>Hi, I'm Shah Firizki Azmi</h1>
-                <h3>Frontend Developer</h3>
-                <div class="info-p">
-                   <p>I analyze data, uncover insights, and build data-driven solutions.</p>
-                   <p>With strong experience in data cleaning, visualization, machine learning, and dashboard development,</p>
-                   <p>I turn raw data into clear stories that support decision-making.</p>
-                </div>
-                <div class="info-p2">
-                    <p><i class="fa-solid fa-location-dot"></i> Based in Indonesia</p>
-                    <p><i class="fa-solid fa-briefcase"></i> Available Now</p>
-                </div>
-                <div class="btnn">
-                    <button class="btn-home1"><i class="fa-solid fa-arrow-right"></i> Hire Me</button>
-                    <a href="https://drive.google.com/file/d/1sM9nSzhG0gnVTY76yVOgqiqkGCsOGacs/view?usp=sharing"
-                    class="btn-home2"
-                    target="_blank">
-                    <i class="fa-solid fa-download"></i> Download CV</a>
-                </div>
-                <div class="hhr">
-                    <hr>
-                </div>
-                <div class="follow">
-                    <p class="followw">Follow me:</p>
-                    <ul>
-                        <li><a href="https://github.com/2200018178-FIRIZKI" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                        <li><a href="https://discord.com/channels/1326016102714572903/1424973324429295617" target="_blank"><i class="fa-brands fa-discord"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/shah-firizki-azmi/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                        
-                    </ul>
-                </div>
-            </div>
-          </div>
-          <img src="images/img2.jpg" alt="">
-        </div>
-    </section>
-    <!-- fine home  -->
-     <section class="about" id="about" >
-        <p id="about">ABOUT ME</p>
-        <div class="title">
-        <h1>Building Meaningful</h1>
-        <h1>Digital Experiences</h1>
-        </div>
-        <div class="hrrr">
-            <hr>
-        </div>
-        <div class="about-container">
-            <div class="info-about">
-            <div class="about-info">
-                <p>
-                    I am a Data Analyst who specializes in transforming raw data into meaningful insights and
-                    <br>actionable recommendations. My work focuses on understanding patterns, solving business problems,</br>
-                    and creating data-driven solutions that support decision-making.
-               </p>
-                </p>
-                <p>
-                  My journey in data analytics began when I realized that data is more than just numbers—it is a story
-                  <br>that reveals trends, behaviors, and opportunities. I enjoy cleaning data, exploring it, visualizing it,</br>
-                  and building predictive models that provide real value.
-                </p>
-            </div>
-            <h2>What Drives Me</h2>
-            <div class="card">
-                <div class="c1">
-                    <h3><i class="fa-solid fa-code"></i> Analytical Skills</h3>
-                    <p>Python,PostgreSQL,Data Cleaning & EDA,Data Visualization</p>
-                </div>
-                <div class="c1">
-                    <h3><i class="fa-solid fa-graduation-cap"></i> Education</h3>
-                    <p>Informatics Graduate</p>
-                </div>
-            <div class="c1">
-                    <h3><i class="fa-solid fa-folder-open"></i> Projects</h3>
-                    <p>Built more than 5 projects</p>
-                </div>
-            </div>
-        </div>
-        
-        </div>
-     </section>
-     <section class="project" id="project">
-        <p>PROJECTS</p>
-        <h1>Featured Work</h1>
-        <hr>
-        <div class="info-pro">
-            <p>Several data analysis and machine learning projects that I have built,ranging from data cleaning, </p>
-            <p>exploratory data analysis (EDA), visualization, to predictive modeling — all aimed at solving real-world problems.</p>
-        </div>
-        <div class="projects-container">
-
-    <div class="project-card">
-      <img src="images/Cleveroad.jpg" alt="Customer Segmentation and Classification">
-      <h3>E-Customer Segmentation and Classification</h3>
-      <p>Machine learning project for bank transaction analysis, customer segmentation, and customer classification using data preprocessing, feature engineering, and predictive modeling.</p>
-      <div class="skills">
-        <a href="#">Python</a>
-        <a href="#">Numpy</a>
-        <a href="#">Matplotlib</a>
-        <a href="#">Scikit-learn</a>
-        <a href="#">Seaborn</a>
-
-      </div>
-      <div class="btns">
-        <a href="https://github.com/2200018178-FIRIZKI/Bank-Transaction-Analysis-with-Machine-Learning-Customer-Segmentation-and-Classification" class="btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <img src="images/Image Classification.png" alt="CIFAR-10 Image Classification with Deep CNN">
-      <h3>CIFAR-10 Image Classification with Deep CNN</h3>
-      <p>Deep learning-based image classification project developed using TensorFlow and Keras, including data preprocessing, model training, and evaluation.</p>
-      <div class="skills">
-        <a href="#">Python</a>
-        <a href="#">Tensorflow</a>
-        <a href="#">Numpy</a>
-        <a href="#">Keras</a>
-        <a href="#">Matplotlib</a>
-        <a href="#">CNN</a>
-
-
-
-      </div>
-      <div class="btns">
-        <a href="https://github.com/2200018178-FIRIZKI/Proyek-Klasifikasi-Gambar" class="btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <img src="images/Analysis Free-Fire.jpeg" alt="Sentiment Analysis of 12,000 Free Fire Reviews Using Machine Learning & Deep Learning">
-      <h3>Sentiment Analysis of 12,000 Free Fire Reviews Using Machine Learning & Deep Learning</h3>
-      <p>Sentiment analysis system that classifies text into positive, negative, or neutral sentiments using natural language processing and machine learning.</p>
-      <div class="skills">
-        <a href="#">Python</a>
-        <a href="#">Pandas</a>
-        <a href="#">Numpy</a>
-        <a href="#">Scikit-learn</a>
-        <a href="#">Matplotlib</a>
-        <a href="#">Seaborn</a>
-        <a href="#">K-Means</a>
-        <a href="#">Random Forest</a>
-        
-      </div>
-      <div class="btns">
-        <a href="https://github.com/2200018178-FIRIZKI/Sistem-Analisis-Sentimen" class="btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <img src="images/Telco Customer Churn.jpg" alt="End-to-End Machine Learning Pipeline for Telco Customer Churn Prediction">
-      <h3>End-to-End Machine Learning Pipeline for Telco Customer Churn Prediction</h3>
-      <p>End-to-end machine learning pipeline for predicting telecom customer churn, including data preprocessing, feature engineering, model training, and model evaluation.</p>
-      <div class="skills">
-        <a href="#">Python</a>
-        <a href="#">Scikit-learn</a>
-        <a href="#">Pandas</a>
-        <a href="#">Matplotlib</a>
-        <a href="#">Numpy</a>
-        <a href="#">Machine Learning</a>
-        <a href="#">Classification</a>
-      </div>
-      <div class="btns">
-        <a href="https://github.com/2200018178-FIRIZKI/SML_SHAH-FIRIZKI-AZMI" class="btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <img src="images/Claim Asuransi.jpeg" alt="Dashboard Claim Asuransi">
-      <h3>Dashboard Claim Asuransi</h3>
-      <p>Interactive Tableau dashboard for analyzing insurance claim data through key metrics, trends, and visual insights.</p>
-      <div class="skills">
-        <a href="#">Python</a>
-        <a href="#">Tableau</a>
-        <a href="#">Pandas</a>
-        <a href="#">Matplotlib</a>
-        <a href="#">Numpy</a>
-        <a href="#">Machine Learning</a>
-        
-      </div>
-      <div class="btns">
-        <a href="https://public.tableau.com/app/profile/shah.firizki.azmi/viz/LabrakTerus/Dashboard1" class="btn tableau-btn" target="_blank"><i class="fas fa-chart-bar"></i> View Dashboard</a>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <img src="images/Chatboot.jpeg" alt="Chatbot JDIH">
-      <h3>Chatbot JDIH</h3>
-      <p>AI-powered legal document chatbot using Retrieval-Augmented Generation (RAG) to answer questions based on Indonesian legal documents.</p>
-      <div class="skills">
-        <a href="#">Python</a>
-        <a href="#">FastAPI</a>
-        <a href="#">PostgreSQL</a>
-        <a href="#">Qdrant</a>
-        <a href="#">RAG</a>
-        <a href="#">LLM</a>
-        <a href="#">Docker</a>
-      </div>
-      <div class="btns">
-        <a href="https://github.com/2200018178-FIRIZKI/Project_chatboot_JDIH" class="btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <img src="images/E-Commerce.jpeg" alt="E-Commerce">
-      <h3>E-Commerce</h3>
-      <p>Interactive E-Commerce data analysis dashboard covering data wrangling, EDA, and SMART business insights built with Streamlit.</p>
-      <div class="skills">
-        <a href="#">Python</a>
-        <a href="#">Tableau</a>
-        <a href="#">Pandas</a>
-        <a href="#">Matplotlib</a>
-        <a href="#">Numpy</a>
-        <a href="#">Machine Learning</a>
-      </div>
-      <div class="btns">
-        <a href="https://github.com/2200018178-FIRIZKI/Analisis-Data-products-dataset" class="btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-        <a href="https://firizki-ecommerce-analysis.streamlit.app/" class="btn btn-streamlit" target="_blank"><i class="fas fa-chart-line"></i> Streamlit</a>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <img src="images/HR.jpeg" alt="HR Analytics">
-      <h3>HR Analytics: Employee Attrition Prediction & Dashboard</h3>
-      <p>Interactive HR analytics dashboard built with Metabase to monitor employee attrition, workforce trends, and key business insights.</p>
-      <div class="skills">
-        <a href="#">Python</a> 
-        <a href="#">Metabase Dashboard</a>
-        <a href="#">Pandas</a>
-        <a href="#">Business Intelligence</a>
-        <a href="#">Data Analysis</a>
-        <a href="#">HR Analytics</a>
-      </div>
-      <div class="btns">
-        <a href="https://github.com/2200018178-FIRIZKI/Project_chatboot_JDIH" class="btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <img src="images/Dropout.jpeg" alt="Student Dropout Prediction System">
-      <h3>Student Dropout Prediction System</h3>
-      <p>Student performance analytics and dropout prediction system combining business intelligence dashboards with machine learning.</p>
-      <div class="skills">
-        <a href="#">Python</a>
-        <a href="#">Scikit-learn</a>
-        <a href="#">Pandas</a>
-        <a href="#">Numpy</a>
-        <a href="#">Machine Learning</a>
-        <a href="#">Metabase Dashboard</a>
-        <a href="#">Classification</a>
-      </div>
-      <div class="btns">
-        <a href=" https://github.com/2200018178-FIRIZKI/Proyek-Akhir-Penerapan-Data-Science-Indosat/tree/main" class="btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <img src="images/Customer.jpg" alt="Customer Segmentation & Churn Analysis Dashboard">
-      <h3>Customer Segmentation & Churn Analysis Dashboard</h3>
-      <p>Customer analytics project using RFM segmentation and churn analysis to identify customer behavior, retention opportunities, and business insights through interactive dashboards.</p>
-      <div class="skills">
-        <a href="#">Python</a>
-        <a href="#">Tableau Dashboard</a>
-        <a href="#">Pandas</a>
-        <a href="#">Matplotlib</a>
-        <a href="#">Numpy</a>
-        <a href="#">Machine Learning</a>
-        <a href="#">RFM Analysis</a>
-        <a href="#">Churn Analysis</a>
-        <a href="#">Customer Analytics</a>
-      </div>
-      <div class="btns">
-        <a href="https://public.tableau.com/app/profile/shah.firizki.azmi/viz/A25-CS320ShahFirizkiAzmi/Dashboard1A25-CS320?publish=yes" class="btn tableau-btn" target="_blank"><i class="fas fa-chart-bar"></i> View Dashboard</a>
-      </div>
-    </div>
-  </div>
-  
-<section class="experience" id="experience">
-
-    <p class="section-subtitle">EXPERIENCE</p>
-
-    <h1>Professional Experience</h1>
-
-    <hr>
-
-    <div class="info-exp">
-        <p>
+<div class="desc" id="desc">
+<div class="k" id="ds-k"></div>
+<p id="ds-p"></p>
+<div class="tech" id="ds-t"></div>
+<div class="num" id="ds-n">01 / 11</div>
+</div>
+<button aria-label="Previous case" class="nav-case prev" id="btn-prev">
+<span class="c"><svg viewbox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"></path></svg></span>
+<span class="l">previous <br/>case</span>
+</button>
+<button aria-label="Next case" class="nav-case next" id="btn-next">
+<span class="c"><svg viewbox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+<span class="l">next <br/>case</span>
+</button>
+</div>
+<!-- full section menu (all original nav links) -->
+<header class="header-list" id="header">
+<div class="div-list" id="nav-menu">
+<button aria-label="Close menu" class="menu-close" id="menu-close"><i class="fa-solid fa-xmark"></i></button>
+<ul class="ul-list">
+<li class="active"><i class="fa-regular fa-house"></i><a data-i18n="k240" href="#home">Home</a></li>
+<li><i class="fa-regular fa-address-card"></i><a data-i18n="k241" href="#about">About</a></li>
+<li><i class="fa-solid fa-layer-group"></i><a data-i18n="k242" href="#skills">Skills</a></li>
+<li><i class="fa-solid fa-briefcase"></i><a data-i18n="k243" href="#experience">Experience</a></li>
+<li><i class="fa-regular fa-folder-open"></i><a data-i18n="k244" href="#project">Projects</a></li>
+<li><i class="fa-solid fa-award"></i><a data-i18n="k245" href="#certifications">Certifications</a></li>
+<li><i class="fa-solid fa-code"></i><a data-i18n="k246" href="#services">Services</a></li>
+<li><i class="fa-regular fa-envelope"></i><a data-i18n="k247" href="#contact">Contact</a></li>
+</ul>
+</div>
+</header>
+<main>
+<!-- ================= STAGE: LAPTOP DIVE ================= -->
+<section aria-label="Shah Firizki Azmi, Data Analyst" class="stage" id="home">
+<div class="st-bg">
+<div class="st-photo"></div>
+<div class="st-tint"></div>
+<div class="st-case"></div>
+</div>
+<svg aria-hidden="true" class="wm pre" preserveaspectratio="none" viewbox="0 0 1440 260">
+<defs>
+<lineargradient id="wmg" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0" stop-color="#ffffff" stop-opacity="1"></stop>
+<stop offset=".5" stop-color="#f4f3f2" stop-opacity=".9"></stop>
+<stop offset="1" stop-color="#e3e0da" stop-opacity=".22"></stop>
+</lineargradient>
+</defs>
+<text fill="url(#wmg)" lengthadjust="spacingAndGlyphs" textlength="1412" x="14" y="212">SHAH FIRIZKI AZMI</text>
+</svg>
+<p class="sr-only">Shah Firizki Azmi — Data Analyst &amp; Automation Developer</p>
+<div aria-hidden="true" class="script pre">data-analyst</div>
+<!-- lanyard ID badge (physics) -->
+<div aria-hidden="true" class="lanyard pre" id="lanyard">
+<svg class="rope" id="rope">
+<defs>
+<lineargradient id="ropeShade" x1="0" x2="1" y1="0" y2="0">
+<stop offset="0" stop-color="#24211c"></stop><stop offset=".5" stop-color="#38342c"></stop><stop offset="1" stop-color="#24211c"></stop>
+</lineargradient>
+</defs>
+<path class="rope-shadow" id="rope-shadow"></path><path class="rope-shadow" id="rope-shadow-2"></path>
+<path class="rope-band" id="rope-band"></path><path class="rope-band" id="rope-band-2"></path>
+<path class="rope-stitch" id="rope-stitch"></path><path class="rope-stitch" id="rope-stitch-2"></path>
+<text class="rope-text" dy="3.5"><textPath href="#rope-band" startOffset="0">SHAH FIRIZKI AZMI · DATA ANALYST · SHAH FIRIZKI AZMI · DATA ANALYST · SHAH FIRIZKI AZMI ·</textPath></text>
+<text class="rope-text" dy="3.5"><textPath href="#rope-band-2" startOffset="0">AUTOMATION DEVELOPER · PORTFOLIO 2026 · AUTOMATION DEVELOPER · PORTFOLIO 2026 ·</textPath></text>
+</svg>
+<div class="idcard" id="idcard">
+<div class="hook"><i class="ring"></i><i class="swivel"></i><i class="clasp"></i></div>
+<div class="sleeve">
+<div class="id-card">
+<div class="id-head"><span class="id-logo">SF</span><span class="id-label">ANALYST CARD</span><span class="yr">2026</span></div>
+<div class="id-main">
+<div class="ph"><img alt="" draggable="false" src="images/img2.jpg"/></div>
+<div class="id-who"><h4>SHAH<br/>FIRIZKI<br/>AZMI</h4><div class="role">DATA ANALYST<br/>AUTOMATION DEV</div></div>
+</div>
+<div class="row"><span>FOCUS</span><b>DATA &amp; AUTOMATION</b></div>
+<div class="row"><span>NOW</span><b>BANK BRI · 2026</b></div>
+<div class="row"><span>GPA</span><b>3.70 / 4.00</b></div>
+<div class="barcode"></div>
+</div>
+</div>
+<span class="drag-hint" data-i18n="dragHint">drag me</span>
+</div>
+</div>
+<!-- the laptop -->
+<div class="laptop-pose" id="laptop">
+<div class="laptop-float">
+<div class="lid">
+<div class="bezel">
+<div class="cam"></div>
+<div class="screen" id="screen">
+<div class="dash" id="dash">
+<aside class="d-side">
+<span class="d-logo">S</span>
+<i class="on"></i><i></i><i></i><i></i><i></i>
+</aside>
+<div class="d-main">
+<div class="d-head">
+<div>
+<small>SICER · SLIK–SICD</small>
+<strong>Credit Review</strong>
+</div>
+<span class="d-chip">v2.3.2</span>
+<span class="d-search">Search NIK / NPWP…</span>
+</div>
+<div class="d-kpis">
+<div><small>Analysis time</small><strong>3–5s</strong><em class="up">−99.9%</em></div>
+<div><small>Formulas validated</small><strong>1,800+</strong><em class="up">100%</em></div>
+<div><small>Real PDFs tested</small><strong>40+</strong><em>6 formats</em></div>
+<div><small>Automated tests</small><strong>36/36</strong><em class="up">passing</em></div>
+</div>
+<div class="d-body">
+<div class="d-card d-chart">
+<div class="d-ct"><span>Total exposure · 24 months</span><b>IDR bn</b></div>
+<svg preserveaspectratio="none" viewbox="0 0 400 170">
+<defs><lineargradient id="dArea" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#c4b79f" stop-opacity=".45"></stop><stop offset="1" stop-color="#c4b79f" stop-opacity="0"></stop></lineargradient></defs>
+<g class="d-grid"><line x1="0" x2="400" y1="40" y2="40"></line><line x1="0" x2="400" y1="85" y2="85"></line><line x1="0" x2="400" y1="130" y2="130"></line></g>
+<path class="d-area" d="M0 150 C40 140 60 104 100 110 S160 70 200 80 260 40 300 48 360 18 400 14 L400 170 L0 170Z"></path>
+<path class="d-path" d="M0 150 C40 140 60 104 100 110 S160 70 200 80 260 40 300 48 360 18 400 14"></path>
+<circle class="d-pt" cx="300" cy="48" r="5"></circle>
+</svg>
+<div class="d-bars"><i style="--h:42%"></i><i style="--h:66%"></i><i style="--h:51%"></i><i style="--h:84%"></i><i style="--h:60%"></i><i style="--h:92%"></i><i style="--h:73%"></i><i style="--h:97%"></i><i style="--h:80%"></i><i style="--h:88%"></i></div>
+</div>
+<div class="d-card d-table">
+<div class="d-ct"><span>Pre-screening</span><b>today</b></div>
+<div class="d-row"><span>Debtor A-0192</span><em class="ok">LAYAK</em></div>
+<div class="d-row"><span>Debtor B-2231</span><em class="warn">CATATAN</em></div>
+<div class="d-row"><span>Debtor C-0874</span><em class="ok">LAYAK</em></div>
+<div class="d-row"><span>Debtor D-1450</span><em class="bad">TIDAK</em></div>
+<div class="d-row"><span>Debtor E-3307</span><em class="ok">LAYAK</em></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cases" id="cases"></div>
+<div class="flash" id="flash"></div>
+</div>
+</div>
+</div>
+<div class="hinge"></div>
+<div class="base"><i class="notch"></i><i class="foot l"></i><i class="foot r"></i></div>
+<div class="shadow"></div>
+</div>
+<div class="screen-hit" id="screen-hit" title="next case"></div>
+</div>
+<div class="hero-meta hm-left pre">
+<span data-i18n="k254">Data Analyst &amp; Automation Developer</span>
+<span data-i18n="k255">Jakarta Barat, Indonesia</span>
+</div>
+<div class="hero-meta hm-right pre">
+<span data-i18n="k256"><i class="dot"></i> Currently @ Bank BRI</span>
+<span data-i18n="k257">S.Kom Informatics · GPA 3.70</span>
+</div>
+<div class="hint pre" data-i18n="k252" id="hint"><i></i>scroll into the work</div>
+<a class="skip pre" data-i18n="k253" href="#intro" id="skip">skip to profile ↓</a>
+</section>
+<!-- ================= INTRO (original hero content) ================= -->
+<section class="home intro" id="intro">
+<div class="hero-bg" style="--img:url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&amp;fit=crop&amp;w=2400&amp;q=85')"></div>
+<div class="blob blob-1"></div>
+<div class="blob blob-2"></div>
+<div class="grid-overlay"></div>
+<div class="home-container container">
+<div class="home-section">
+<div class="info-home">
+<p class="home-p reveal" data-i18n="k1"><span class="pulse-dot"></span> Currently: Data Analyst Intern at Bank BRI</p>
+<h1 class="reveal">Hi, I'm <span class="gradient-text">Shah Firizki Azmi</span></h1>
+<h3 class="reveal">Frontend Developer</h3>
+<div class="info-p reveal">
+<p data-i18n="k2">I analyze data, uncover insights, and build data-driven solutions.</p>
+<p data-i18n="k3">With strong experience in data cleaning, visualization, machine learning, and dashboard development,</p>
+<p data-i18n="k4">I turn raw data into clear stories that support decision-making.</p>
+</div>
+<div class="info-p2 reveal">
+<p data-i18n="k5"><i class="fa-solid fa-location-dot"></i> Based in Indonesia (Jakarta Barat)</p>
+<p data-i18n="k6"><i class="fa-solid fa-briefcase"></i> Available Now</p>
+<p data-i18n="k7"><i class="fa-solid fa-graduation-cap"></i> S.Kom, GPA 3.70</p>
+</div>
+<div class="btnn reveal">
+<a class="btn-home1" data-i18n="k8" href="#contact"><i class="fa-solid fa-arrow-right"></i> Hire Me</a>
+<a class="btn-home2" data-i18n="k9" href="https://drive.google.com/file/d/1sM9nSzhG0gnVTY76yVOgqiqkGCsOGacs/view?usp=sharing" rel="noopener" target="_blank">
+<i class="fa-solid fa-download"></i> Download CV</a>
+</div>
+<div class="hhr"><hr/></div>
+<div class="follow reveal">
+<p class="followw" data-i18n="k10">Follow me:</p>
+<ul>
+<li><a aria-label="GitHub" href="https://github.com/2200018178-FIRIZKI" rel="noopener" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+<li><a aria-label="Discord" href="https://discord.com/channels/1326016102714572903/1424973324429295617" rel="noopener" target="_blank"><i class="fa-brands fa-discord"></i></a></li>
+<li><a aria-label="LinkedIn" href="https://www.linkedin.com/in/shah-firizki-azmi/" rel="noopener" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+<li><a aria-label="Email" href="mailto:shahfirizkiazmi041103@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="hero-visual reveal">
+<div class="photo-frame">
+<img alt="Shah Firizki Azmi" src="images/img2.jpg"/>
+</div>
+<div class="float-card fc-1"><i class="fa-solid fa-bolt"></i><div><strong>±5 hours → 3–5 sec</strong><span>Credit review automated</span></div></div>
+<div class="float-card fc-2"><i class="fa-solid fa-chart-pie"></i><div><strong>Power BI · Tableau</strong><span>Dashboards &amp; reporting</span></div></div>
+<div class="float-card fc-3"><i class="fa-brands fa-python"></i><div><strong>Python · SQL</strong><span>Automation &amp; analysis</span></div></div>
+</div>
+</div>
+<div class="stats container">
+<div class="stat reveal"><h4><span class="counter" data-target="1">0</span>+</h4><p data-i18n="k11">Year of experience in data</p></div>
+<div class="stat reveal"><h4><span class="counter" data-target="18">0</span>+</h4><p data-i18n="k12">Projects built</p></div>
+<div class="stat reveal"><h4><span class="counter" data-target="5">0</span></h4><p data-i18n="k13">Internships &amp; roles</p></div>
+<div class="stat reveal"><h4><span class="counter" data-decimals="2" data-target="3.70">0</span></h4><p data-i18n="k14">GPA out of 4.00</p></div>
+</div>
+</section>
+<!-- ================= MARQUEE ================= -->
+<div aria-hidden="true" class="marquee">
+<div class="marquee-track">
+<span>Python</span><span>SQL</span><span>PostgreSQL</span><span>Power BI</span><span>Tableau</span><span>Excel</span><span>Streamlit</span><span>Metabase</span><span>Scikit-learn</span><span>Pandas</span><span>Tkinter</span><span>PyMuPDF</span><span>Flutter</span><span>OCR</span><span>RAG</span>
+<span>Python</span><span>SQL</span><span>PostgreSQL</span><span>Power BI</span><span>Tableau</span><span>Excel</span><span>Streamlit</span><span>Metabase</span><span>Scikit-learn</span><span>Pandas</span><span>Tkinter</span><span>PyMuPDF</span><span>Flutter</span><span>OCR</span><span>RAG</span>
+</div>
+</div>
+<!-- ================= ABOUT ================= -->
+<section class="about section" id="about">
+<div class="container">
+<div class="section-head reveal">
+<span class="sec-no">01</span>
+<p class="eyebrow" data-i18n="k15">ABOUT ME</p>
+<div class="title">
+<h1 data-i18n="k22">Building Meaningful <span class="gradient-text">Digital Experiences</span></h1>
+</div>
+<div class="hrrr"><hr/></div>
+</div>
+<div class="about-container">
+<div class="about-media reveal">
+<img alt="Modern office architecture" data-fallback="images/dashboard.png" loading="lazy" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&amp;fit=crop&amp;w=1400&amp;q=85"/>
+<div class="about-badge">
+<i class="fa-solid fa-building-columns"></i>
+<div><strong data-i18n="k44">Bank Rakyat Indonesia</strong><span data-i18n="k45">Magang Hub Kemnaker · 2026</span></div>
+</div>
+</div>
+<div class="info-about">
+<div class="about-info reveal">
+<p class="lead" data-i18n="k32">
+              Informatics graduate (S.Kom) from Universitas Ahmad Dahlan with a GPA of 3.70/4.00 and more than one year of
+              experience in data analysis and data science. Currently interning as a Data Analyst at Bank BRI through the
+              Magang Hub Kemnaker program, focusing on data processing, reporting, process automation, and building dashboards
+              for performance monitoring.
+            </p>
+<p data-i18n="k33">
+              I am a Data Analyst who specializes in transforming raw data into meaningful insights and
+              actionable recommendations. My work focuses on understanding patterns, solving business problems,
+              and creating data-driven solutions that support decision-making.
+            </p>
+<p data-i18n="k34">
+              My journey in data analytics began when I realized that data is more than just numbers—it is a story
+              that reveals trends, behaviors, and opportunities. I enjoy cleaning data, exploring it, visualizing it,
+              and building predictive models that provide real value. I also love automating repetitive work so it
+              becomes faster and more accurate.
+            </p>
+</div>
+<h2 class="reveal" data-i18n="k35">What Drives Me</h2>
+<div class="card">
+<div class="c1 reveal">
+<h3 data-i18n="k36"><i class="fa-solid fa-code"></i> Analytical Skills</h3>
+<p data-i18n="k40">Python, PostgreSQL, Data Cleaning &amp; EDA, Data Visualization</p>
+</div>
+<div class="c1 reveal">
+<h3 data-i18n="k37"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+<p data-i18n="k41">Informatics Graduate (S.Kom), Universitas Ahmad Dahlan · GPA 3.70</p>
+</div>
+<div class="c1 reveal">
+<h3 data-i18n="k38"><i class="fa-solid fa-folder-open"></i> Projects</h3>
+<p data-i18n="k42">Built more than 10 projects</p>
+</div>
+<div class="c1 reveal">
+<h3 data-i18n="k39"><i class="fa-solid fa-gears"></i> Automation</h3>
+<p data-i18n="k43">Cut manual processes from hours to seconds with Python</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= SKILLS (from CV) ================= -->
+<section class="skills-section section" id="skills">
+<div class="container">
+<div class="section-head center reveal">
+<span class="sec-no">02</span>
+<p class="eyebrow" data-i18n="k16">SKILLS</p>
+<h1 data-i18n="k23">Tools &amp; <span class="gradient-text">Expertise</span></h1>
+<p class="section-desc" data-i18n="k29">The technologies and concepts I use every day to turn data into insight and manual work into automation.</p>
+</div>
+<div class="skills-grid">
+<div class="skill-card reveal">
+<div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+<h3 data-i18n="k46">Data Analysis &amp; Programming</h3>
+<div class="skills">
+<a>SQL (joins, aggregations)</a><a>Python</a><a>Pandas</a><a>NumPy</a><a>Scikit-learn</a><a>PostgreSQL</a>
+</div>
+</div>
+<div class="skill-card reveal">
+<div class="skill-icon"><i class="fa-solid fa-chart-column"></i></div>
+<h3 data-i18n="k47">Visualization &amp; Reporting</h3>
+<div class="skills">
+<a>Power BI</a><a>Tableau</a><a>Microsoft Excel</a><a>Pivot Table</a><a>VLOOKUP</a><a>Conditional Formatting</a><a>Streamlit</a><a>Metabase</a>
+</div>
+</div>
+<div class="skill-card reveal">
+<div class="skill-icon"><i class="fa-solid fa-robot"></i></div>
+<h3 data-i18n="k48">Automation</h3>
+<div class="skills">
+<a>Python / Jupyter Notebook</a><a>PDF &amp; Excel report export</a><a>PowerPoint automation</a><a>OCR for PDF documents</a>
+</div>
+</div>
+<div class="skill-card reveal">
+<div class="skill-icon"><i class="fa-solid fa-laptop-code"></i></div>
+<h3 data-i18n="k49">Application Development</h3>
+<div class="skills">
+<a>Tkinter (desktop)</a><a>PyMuPDF (PDF extraction)</a><a>openpyxl</a><a>pytest</a><a>PyInstaller</a><a>Flutter</a><a>FastAPI</a>
+</div>
+</div>
+<div class="skill-card reveal">
+<div class="skill-icon"><i class="fa-solid fa-brain"></i></div>
+<h3 data-i18n="k50">Data Concepts</h3>
+<div class="skills">
+<a>Data Cleaning</a><a>EDA</a><a>RFM Segmentation</a><a>K-Means</a><a>Classification</a><a>Churn Prediction</a><a>Stakeholder Reporting</a>
+</div>
+</div>
+<div class="skill-card reveal">
+<div class="skill-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+<h3 data-i18n="k51">AI &amp; Web</h3>
+<div class="skills">
+<a>RAG</a><a>LLM</a><a>Qdrant</a><a>Docker</a><a>TensorFlow / Keras</a><a>HTML / CSS / JS</a><a>React</a><a>Node.js</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= EXPERIENCE ================= -->
+<section class="experience section" id="experience">
+<div class="container">
+<div class="section-head center reveal">
+<span class="sec-no">03</span>
+<p class="section-subtitle eyebrow" data-i18n="k17">EXPERIENCE</p>
+<h1 data-i18n="k24">Professional <span class="gradient-text">Experience</span></h1>
+<div class="info-exp">
+<p class="section-desc" data-i18n="k30">
             My professional experiences through internships, training programs,
             and academic activities in Data Science, Artificial Intelligence,
             Machine Learning, and Software Development.
-        </p>
-    </div>
-
-    <div class="timeline">
-
-        <!-- Experience 1 -->
-        <div class="timeline-item">
-
-            <div class="timeline-dot"></div>
-
-            <div class="timeline-content">
-
-                <span class="date">Jan 2026 - Present</span>
-
-                <h3>Data Scientist Intern (IDCamp)</h3>
-
-                <h4>IDCamp Indosat Ooredoo Hutchison</h4>
-
-                <p>
-                    Conducted employee attrition analysis, performed data preprocessing,
-                    exploratory data analysis (EDA), developed interactive dashboards
-                    using Streamlit and Metabase, and delivered data-driven recommendations
-                    to improve employee retention.
-                </p>
-
-                <div class="skills">
-                    <a>Python</a>
-                    <a>Pandas</a>
-                    <a>Streamlit</a>
-                    <a>Metabase</a>
-                    <a>Machine Learning</a>
-                </div>
-
-                <div class="experience-btn">
-                    <a href="https://drive.google.com/file/d/1J1s-kLBzcezVAIaVYQpskUj_FUpjbnRx/view" class="btn">
-                        <i class="fa-solid fa-award"></i>
-                        View Certificate
-                    </a>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- Experience 2 -->
-
-<div class="timeline-item">
-
-    <div class="timeline-dot"></div>
-
-    <div class="timeline-content">
-
-        <span class="date">Apr 2026 - May 2026</span>
-
-        <h3>Microsoft Excel Basic to Advanced Bootcamp</h3>
-
-        <h4>MySkill Intensive Bootcamp</h4>
-
-        <p>
+          </p>
+</div>
+</div>
+<div class="timeline tl-art">
+<!-- Experience: BRI (from CV) -->
+<div class="timeline-item reveal">
+<div class="timeline-dot"></div>
+<span class="tl-no">01</span>
+<div class="timeline-content featured">
+<span class="date" data-i18n="k52">Aug 2026 - Present</span>
+<span class="badge-now">Current</span>
+<h3 data-i18n="k59">Data Analyst &amp; Automation Developer (Intern)</h3>
+<h4 data-i18n="k66">Bank Rakyat Indonesia (BRI), Head Office · Magang Hub Kemnaker (Ministry of Manpower RI)</h4>
+<p data-i18n="k59s">Data processing, reporting, Python automation and web dashboards at BRI Head Office, including SICER, a credit pre-screening app that cuts hours of analysis to seconds.</p>
+<ul class="exp-list">
+<li data-i18n="k79">Processed, cleaned, and analyzed daily and monthly data in Microsoft Excel to identify trends and patterns that support business decisions.</li>
+<li data-i18n="k80">Prepared analysis reports and developed a web-based dashboard (frontend, SQL backend, PostgreSQL database) for performance monitoring and evaluation.</li>
+<li data-i18n="k81">Optimized a Python program for data extraction and PDF/Excel export, cutting processing time from ±30 minutes to 9 minutes.</li>
+<li data-i18n="k82">Automated the processing of Excel files (CMB, TL, linkage) into PowerPoint presentations.</li>
+<li data-i18n="k83">Built an OCR-based website to recap bank statements (rekening koran) from PDF documents.</li>
+<li data-i18n="k84">Developed an Android app (Flutter) for Group Heads to rank participant performance, plus Python/Jupyter Notebook programs to automate daily data and extract OJK iDeb documents to PDF.</li>
+<li data-i18n="k85">Developed <strong>SICER (SLIK–SICD Credit Review)</strong>, a desktop pre-screening app for the Credit Division that cut analysis time from up to ±5 hours (manual) to 3–5 seconds. <a class="inline-link" href="#project">See project →</a></li>
+</ul>
+<div class="skills">
+<a>Microsoft Excel</a><a>Python</a><a>SQL</a><a>PostgreSQL</a><a>OCR</a><a>Flutter</a><a>Tkinter</a><a>PowerPoint Automation</a>
+</div>
+<button class="pc-detail" type="button"><span data-i18n="detailBtn">View details</span> <i class="fa-solid fa-arrow-right"></i></button>
+</div>
+</div>
+<!-- Experience 1 -->
+<div class="timeline-item reveal">
+<div class="timeline-dot"></div>
+<span class="tl-no">02</span>
+<div class="timeline-content">
+<span class="date" data-i18n="k53">Jan 2026 - Jun 2026</span>
+<h3 data-i18n="k60">Data Scientist Intern (IDCamp)</h3>
+<h4 data-i18n="k67">IDCamp Indosat Ooredoo Hutchison · Remote</h4>
+<p data-i18n="k73">
+              Conducted employee attrition analysis, performed data preprocessing,
+              exploratory data analysis (EDA), developed interactive dashboards
+              using Streamlit and Metabase, and delivered data-driven recommendations
+              to improve employee retention.
+            </p>
+<ul class="exp-list">
+<li data-i18n="k86">Performed data preprocessing (cleaning, missing values, transformation) on an employee dataset.</li>
+<li data-i18n="k87">Analyzed the causes of a high attrition rate through EDA and identified the key variables driving resignation decisions.</li>
+<li data-i18n="k88">Built interactive dashboards (Streamlit and Metabase) to monitor attrition rate and employee performance.</li>
+<li data-i18n="k89">Delivered data-driven recommendations to the HR team to reduce attrition and improve retention.</li>
+</ul>
+<div class="skills">
+<a>Python</a><a>Pandas</a><a>Streamlit</a><a>Metabase</a><a>Machine Learning</a>
+</div>
+<div class="experience-btn">
+<a class="btn" data-i18n="k105" href="https://drive.google.com/file/d/1J1s-kLBzcezVAIaVYQpskUj_FUpjbnRx/view" rel="noopener" target="_blank">
+<i class="fa-solid fa-award"></i> View Certificate
+              </a>
+</div>
+<button class="pc-detail" type="button"><span data-i18n="detailBtn">View details</span> <i class="fa-solid fa-arrow-right"></i></button>
+</div>
+</div>
+<!-- Experience 3 -->
+<div class="timeline-item reveal">
+<div class="timeline-dot"></div>
+<span class="tl-no">03</span>
+<div class="timeline-content">
+<span class="date" data-i18n="k54">May 2025 - Jan 2026</span>
+<h3 data-i18n="k61">Machine Learning Engineer Intern</h3>
+<h4 data-i18n="k68">Accenture ASAH led by Dicoding · Remote</h4>
+<p data-i18n="k74">
+              Developed an end-to-end customer analytics solution by performing data
+              preprocessing, RFM customer segmentation, churn prediction modeling,
+              and interactive dashboard development. Generated business insights and
+              strategic recommendations to support customer retention and data-driven
+              decision making in the retail sector.
+            </p>
+<ul class="exp-list">
+<li data-i18n="k90">Preprocessed retail customer transaction data (cleaning, missing values, transformation).</li>
+<li data-i18n="k91">Applied the RFM method to segment customers based on purchasing behavior.</li>
+<li data-i18n="k92">Built a churn prediction model to identify customers at risk of leaving.</li>
+<li data-i18n="k93">Created interactive dashboards to visualize segments and monitor business performance.</li>
+</ul>
+<div class="skills">
+<a>Python</a><a>Pandas</a><a>Scikit-learn</a><a>RFM Analysis</a><a>Customer Segmentation</a><a>Churn Prediction</a><a>Tableau</a>
+</div>
+<div class="experience-btn">
+<a class="btn" data-i18n="k106" href="https://drive.google.com/file/d/1N1jz-JhbylRWbyoiuh9q593swRphOaR_/view" rel="noopener" target="_blank">
+<i class="fa-solid fa-award"></i> View Certificate
+              </a>
+</div>
+<button class="pc-detail" type="button"><span data-i18n="detailBtn">View details</span> <i class="fa-solid fa-arrow-right"></i></button>
+</div>
+</div>
+<!-- Experience 4 -->
+<div class="timeline-item reveal">
+<div class="timeline-dot"></div>
+<span class="tl-no">04</span>
+<div class="timeline-content">
+<span class="date" data-i18n="k55">Oct 2025 - Dec 2025</span>
+<h3 data-i18n="k62">AI Engineering Intern</h3>
+<h4 data-i18n="k69">Dinas Kominfo DIY · Balai Monitor Spektrum Frekuensi Radio Kelas I (Kominfo) · Yogyakarta</h4>
+<p data-i18n="k75">
+              Developed an AI-powered legal document chatbot using
+              Retrieval-Augmented Generation (RAG), FastAPI,
+              Qdrant, Docker, and Large Language Models.
+            </p>
+<ul class="exp-list">
+<li data-i18n="k94">Built a question-answering chatbot over PDF documents using a RAG (Retrieval-Augmented Generation) approach.</li>
+<li data-i18n="k95">Developed a context retrieval system so answers stay consistent with the source documents.</li>
+<li data-i18n="k96">Integrated frontend and backend so the chatbot automatically answers based on the latest documents.</li>
+</ul>
+<div class="skills">
+<a>Python</a><a>FastAPI</a><a>Qdrant</a><a>Docker</a><a>RAG</a><a>LLM</a>
+</div>
+<div class="experience-btn">
+<a class="btn" data-i18n="k107" href="https://drive.google.com/file/d/1ryCSKP6HoAtcfASB0RON7aiVoWzrbXhR/view" rel="noopener" target="_blank">
+<i class="fa-solid fa-award"></i> View Certificate
+              </a>
+</div>
+<button class="pc-detail" type="button"><span data-i18n="detailBtn">View details</span> <i class="fa-solid fa-arrow-right"></i></button>
+</div>
+</div>
+<!-- Experience 5 -->
+<div class="timeline-item reveal">
+<div class="timeline-dot"></div>
+<span class="tl-no">05</span>
+<div class="timeline-content">
+<span class="date" data-i18n="k56">Mar 2024 - Aug 2024</span>
+<h3 data-i18n="k63">Teaching Assistant</h3>
+<h4 data-i18n="k70">Universitas Ahmad Dahlan</h4>
+<p data-i18n="k76">
+              Assisted Computer Graphics and Algorithm Strategy laboratory courses by
+              mentoring approximately 40 students in C++ programming. Guided practical
+              sessions, explained core programming and algorithm concepts, assisted with
+              debugging, evaluated assignments, and supported students in developing
+              problem-solving and programming skills.
+            </p>
+<div class="skills">
+<a>C++</a><a>Algorithms</a><a>Computer Graphics</a><a>Data Structures</a><a>Debugging</a><a>Teaching</a>
+</div>
+<div class="experience-btn">
+<a class="btn" data-i18n="k108" href="https://drive.google.com/file/d/1rMVduT6jEY_UXP_FLEQYjn1MTjIUkFYw/view" rel="noopener" target="_blank">
+<i class="fa-solid fa-award"></i> View Certificate
+              </a>
+</div>
+</div>
+<button class="pc-detail" type="button"><span data-i18n="detailBtn">View details</span> <i class="fa-solid fa-arrow-right"></i></button>
+</div>
+</div>
+<!-- Training & Bootcamps -->
+<h2 class="sub-heading reveal" data-i18n="k111"><i class="fa-solid fa-chalkboard-user"></i> Training &amp; Bootcamps</h2>
+<div class="training-grid">
+<!-- Experience 2 -->
+<div class="timeline-content training reveal">
+<span class="date" data-i18n="k57">Apr 2026 - May 2026</span>
+<h3 data-i18n="k64">Microsoft Excel Basic to Advanced Bootcamp</h3>
+<h4 data-i18n="k71">MySkill Intensive Bootcamp</h4>
+<p data-i18n="k77">
             Completed an intensive Microsoft Excel Bootcamp covering data cleaning,
             formulas and functions, Pivot Tables, dashboard reporting, data validation,
             VBA macros, and data visualization. Applied Excel for business reporting,
             data analysis, and automation through practical exercises and a final project.
-        </p>
-
-        <div class="skills">
-            <a>Microsoft Excel</a>
-            <a>Pivot Table</a>
-            <a>Dashboard</a>
-            <a>Data Cleaning</a>
-            <a>VLOOKUP</a>
-            <a>INDEX MATCH</a>
-            <a>VBA Macro</a>
-        </div>
-
-        <div class="experience-btn">
-            <a href="https://drive.google.com/file/d/1ho2-DieBJT1pE2DsG6erYn261FwAMYJc/view?usp=sharing"
-               class="btn"
-               target="_blank">
-                <i class="fa-solid fa-award"></i>
-                View Certificate
-            </a>
-        </div>
-
-    </div>
-
+          </p>
+<div class="skills">
+<a>Microsoft Excel</a><a>Pivot Table</a><a>Dashboard</a><a>Data Cleaning</a><a>VLOOKUP</a><a>INDEX MATCH</a><a>VBA Macro</a>
 </div>
-
-
-<!-- Experience 3-->
-<div class="timeline-item">
-
-    <div class="timeline-dot"></div>
-
-    <div class="timeline-content">
-
-        <span class="date">May 2025 - Oct 2025</span>
-
-        <h3>Machine Learning Engineer Intern</h3>
-
-        <h4>Accenture ASAH led by Dicoding</h4>
-
-        <p>
-            Developed an end-to-end customer analytics solution by performing data
-            preprocessing, RFM customer segmentation, churn prediction modeling,
-            and interactive dashboard development. Generated business insights and
-            strategic recommendations to support customer retention and data-driven
-            decision making in the retail sector.
-        </p>
-
-        <div class="skills">
-            <a>Python</a>
-            <a>Pandas</a>
-            <a>Scikit-learn</a>
-            <a>RFM Analysis</a>
-            <a>Customer Segmentation</a>
-            <a>Churn Prediction</a>
-            <a>Tableau</a>
-        </div>
-
-        <div class="experience-btn">
-            <a href="https://drive.google.com/file/d/1N1jz-JhbylRWbyoiuh9q593swRphOaR_/view"
-               class="btn"
-               target="_blank">
-                <i class="fa-solid fa-award"></i>
-                View Certificate
+<div class="experience-btn">
+<a class="btn" data-i18n="k109" href="https://drive.google.com/file/d/1ho2-DieBJT1pE2DsG6erYn261FwAMYJc/view?usp=sharing" rel="noopener" target="_blank">
+<i class="fa-solid fa-award"></i> View Certificate
             </a>
-        </div>
-
-    </div>
-
 </div>
-
-        <!-- Experience 4 -->
-
-        <div class="timeline-item">
-
-            <div class="timeline-dot"></div>
-
-            <div class="timeline-content">
-
-                <span class="date">Oct 2025 - Dec 2025</span>
-
-                <h3>AI Engineering Intern</h3>
-
-                <h4>Balai Monitor Spektrum Frekuensi Radio Kelas I (Kominfo)</h4>
-
-                <p>
-                    Developed an AI-powered legal document chatbot using
-                    Retrieval-Augmented Generation (RAG), FastAPI,
-                    Qdrant, Docker, and Large Language Models.
-                </p>
-
-                <div class="skills">
-                    <a>Python</a>
-                    <a>FastAPI</a>
-                    <a>Qdrant</a>
-                    <a>Docker</a>
-                    <a>RAG</a>
-                    <a>LLM</a>
-                </div>
-
-                <div class="experience-btn">
-                    <a href="https://drive.google.com/file/d/1ryCSKP6HoAtcfASB0RON7aiVoWzrbXhR/view" class="btn">
-                        <i class="fa-solid fa-award"></i>
-                        View Certificate
-                    </a>
-                </div>
-
-            </div>
-
-        </div>
-  <!-- Experience 5-->
-<div class="timeline-item">
-
-    <div class="timeline-dot"></div>
-
-    <div class="timeline-content">
-
-        <span class="date">Mar 2024 - Aug 2024</span>
-
-        <h3>Teaching Assistant</h3>
-
-        <h4>Universitas Ahmad Dahlan</h4>
-
-        <p>
-            Assisted Computer Graphics and Algorithm Strategy laboratory courses by
-            mentoring approximately 40 students in C++ programming. Guided practical
-            sessions, explained core programming and algorithm concepts, assisted with
-            debugging, evaluated assignments, and supported students in developing
-            problem-solving and programming skills.
-        </p>
-
-        <div class="skills">
-            <a>C++</a>
-            <a>Algorithms</a>
-            <a>Computer Graphics</a>
-            <a>Data Structures</a>
-            <a>Debugging</a>
-            <a>Teaching</a>
-           </div>
-                <div class="experience-btn">
-                    <a href="https://drive.google.com/file/d/1rMVduT6jEY_UXP_FLEQYjn1MTjIUkFYw/view" class="btn">
-                        <i class="fa-solid fa-award"></i>
-                        View Certificate
-                    </a>
-                </div>
-
-
-           </div>
-          <!-- Experience 6 -->
-<div class="timeline-item">
-
-    <div class="timeline-dot"></div>
-
-    <div class="timeline-content">
-
-        <span class="date">Feb 2024 - Jul 2024</span>
-
-        <h3>Full-Stack Developer Trainee</h3>
-
-        <h4>Coding Camp powered by DBS Foundation (Dicoding × DBS Foundation)</h4>
-
-        <p>
+</div>
+<!-- Experience 6 -->
+<div class="timeline-content training reveal">
+<span class="date" data-i18n="k58">Feb 2024 - Jul 2024</span>
+<h3 data-i18n="k65">Full-Stack Developer Trainee</h3>
+<h4 data-i18n="k72">Coding Camp powered by DBS Foundation (Dicoding × DBS Foundation)</h4>
+<p data-i18n="k78">
             Completed an intensive Full-Stack Web Development training program focused
             on modern front-end and back-end technologies. Developed <strong>Budget Ease</strong>,
             a personal finance management web application featuring responsive user
             interfaces, RESTful APIs, authentication, and data management using React,
             Node.js, Express.js, and SQL-based databases.
-        </p>
-
-        <div class="skills">
-            <a>HTML5</a>
-            <a>CSS3</a>
-            <a>JavaScript</a>
-            <a>React</a>
-            <a>Node.js</a>
-            <a>Express.js</a>
-            <a>REST API</a>
-            <a>MySQL</a>
-            <a>Git</a>
-        </div>
-
-        <div class="experience-btn">
-            <a href="https://drive.google.com/file/d/1aaxBgb9qdkpDoR6oM5f_eLB-MNPXCoXD/view"
-               class="btn"
-               target="_blank">
-                <i class="fa-solid fa-award"></i>
-                View Certificate
-            </a>
-        </div>
-
-    </div>
-    
-
+          </p>
+<div class="skills">
+<a>HTML5</a><a>CSS3</a><a>JavaScript</a><a>React</a><a>Node.js</a><a>Express.js</a><a>REST API</a><a>MySQL</a><a>Git</a>
 </div>
-
+<div class="experience-btn">
+<a class="btn" data-i18n="k110" href="https://drive.google.com/file/d/1aaxBgb9qdkpDoR6oM5f_eLB-MNPXCoXD/view" rel="noopener" target="_blank">
+<i class="fa-solid fa-award"></i> View Certificate
+            </a>
+</div>
+</div>
+</div>
+</div>
 </section>
+<!-- ================= PROJECTS ================= -->
+<section class="project section" id="project">
+<div class="container">
+<div class="section-head center reveal">
+<span class="sec-no">04</span>
+<p class="eyebrow" data-i18n="k18">PROJECTS</p>
+<h1 data-i18n="k25">Featured <span class="gradient-text">Work</span></h1>
+<div class="info-pro">
+<p class="section-desc" data-i18n="k31">Several data analysis and machine learning projects that I have built, ranging from data cleaning,
+          exploratory data analysis (EDA), visualization, to predictive modeling — all aimed at solving real-world problems.</p>
+</div>
+</div>
+<!-- Featured: SICER (from CV) -->
+<article class="featured-project reveal" data-category="automation">
+<div class="fp-media">
+<img alt="Credit review documents and analysis" data-fallback="images/dashboard.png" loading="lazy" src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&amp;fit=crop&amp;w=1800&amp;q=85"/>
+<div class="fp-metric">
+<span data-i18n="k115">Analysis time</span>
+<strong>±5 hrs <i class="fa-solid fa-arrow-right"></i> 3–5 sec</strong>
+</div>
+</div>
+<div class="fp-body">
+<span class="fp-tag" data-i18n="k112"><i class="fa-solid fa-star"></i> Featured · 2026 · Python Developer</span>
+<h3>SICER – SLIK–SICD Credit Review</h3>
+<p class="fp-sub" data-i18n="k113">Internal project for the Credit Division (Banking)</p>
+<p data-i18n="k114">Desktop application that streamlines pre-screening of prospective borrowers: it reads OJK SLIK reports (iDeb) and BRI Debtor Information (SICD) in PDF format, then automatically compiles them into a credit analysis Excel report.</p>
+<ul class="exp-list">
+<li data-i18n="k97">Cut analysis time from up to ±5 hours to 3–5 seconds: manual PDF input, Excel compilation and insight processing now run automatically until the Excel report and analysis conclusion are ready.</li>
+<li data-i18n="k98">Extracts credit facilities, 24-month collectibility, collateral, rejections, and owners/management from SLIK OJK and SICD PDFs using layout-coordinate PyMuPDF parsing.</li>
+<li data-i18n="k99">Rule-based conclusion engine (Eligible / With Notes / Not Recommended) and a pre-screening module that matches SLIK with SICD by NIK/NPWP, computes total exposure at BRI, and shows the PDWK authority matrix.</li>
+<li data-i18n="k100">Multi-sheet Excel reports (openpyxl) with traceable SUMIFS/SUBTOTAL formulas and an internal formula evaluator so numbers show on mobile preview; 100% validated against LibreOffice on 1,800+ formulas.</li>
+<li data-i18n="k101">Automatic data validation: total matching against PDF summaries, incomplete iDeb detection, and flagging inconsistencies between reporters.</li>
+<li data-i18n="k102">Handles 6+ report format variations (incl. “Data Tidak Ditemukan”, IDI BRI v1.0, BRI Checking results), tested on 40+ real PDF samples.</li>
+<li data-i18n="k103">36 automated tests (pytest) with a synthetic PDF generator, packaged as .exe (PyInstaller), secured with SHA-256 hashed passwords.</li>
+<li data-i18n="k104">Translated non-IT stakeholder needs into features across several revision cycles (v2.0 → v2.3.2), with system flow documentation and a user guide.</li>
+</ul>
+<div class="fp-stats">
+<div><strong>1,800+</strong><span data-i18n="k116">formulas validated</span></div>
+<div><strong>40+</strong><span data-i18n="k117">real PDFs tested</span></div>
+<div><strong>36</strong><span data-i18n="k118">automated tests</span></div>
+</div>
+<div class="skills">
+<a>Python</a><a>Tkinter</a><a>PyMuPDF</a><a>openpyxl</a><a>pytest</a><a>PyInstaller</a>
+</div>
+<p class="fp-note" data-i18n="k119"><i class="fa-solid fa-lock"></i> Internal banking project. Source code is confidential.</p>
+</div>
+</article>
+<div class="filter-bar reveal" role="tablist">
+<button class="filter-btn active" data-filter="all" data-i18n="k120">All</button>
+<button class="filter-btn" data-filter="analysis" data-i18n="k121">Data Analysis &amp; BI</button>
+<button class="filter-btn" data-filter="ml" data-i18n="k122">Machine Learning</button>
+<button class="filter-btn" data-filter="ai" data-i18n="k123">AI &amp; Deep Learning</button>
+<button class="filter-btn" data-filter="apps" data-i18n="k124">Apps &amp; Automation</button>
+</div>
+<div class="projects-container">
+<div class="project-card reveal" data-category="analysis">
+<div class="pc-img"><img alt="Retail ERP dashboard" data-fallback="images/dashboard.png" loading="lazy" src="https://images.unsplash.com/photo-1604719312566-8912e9227c6a?auto=format&amp;fit=crop&amp;w=1200&amp;q=85"/><span class="pc-year">2026</span><span class="pc-new">NEW</span></div>
+<div class="pc-body">
+<h3 data-i18n="k125">Retail ERP Dashboard for Strategy Monitoring &amp; Risk Mitigation</h3>
+<p data-i18n="k138">Interactive ERP dashboard for a fictional retail company with 40 branches across 6 regions of Indonesia, bringing sales, stock, finance, KPI and risk data into one view.</p>
+<ul class="pc-points">
+<li data-i18n="k151">Daily, monthly and yearly monitoring connected live to Google Sheets.</li>
+<li data-i18n="k152">Balanced Scorecard and Key Risk Indicators with automatic early warnings.</li>
+<li data-i18n="k153">Business insights and recommendations computed directly from the data.</li>
+<li data-i18n="k154">Branch network map, risk heatmap, and mitigation plan tracking.</li>
+<li data-i18n="k155">Excel/PDF export and a bilingual interface (Indonesian &amp; English).</li>
+</ul>
+<div class="skills">
+<a>JavaScript</a><a>Apache ECharts</a><a>Leaflet</a><a>Google Sheets</a><a>Google Apps Script</a><a>BI Dashboard</a>
+</div>
+<div class="btns">
+<a class="btn btn-streamlit" data-i18n="k173" href="https://lnkd.in/gfKUt_dz" rel="noopener" target="_blank"><i class="fas fa-chart-line"></i> Live Demo</a>
+<a class="btn" data-i18n="k174" href="https://lnkd.in/gDrCy55x" rel="noopener" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+</div>
+<button class="pc-detail" type="button"><span data-i18n="detailBtn">View details</span> <i class="fa-solid fa-arrow-right"></i></button>
+</div>
+</div>
+<div class="project-card reveal" data-category="ai apps">
+<div class="pc-img"><img alt="GestureTune hand gesture music player" data-fallback="images/machine-learning.png" loading="lazy" src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&amp;fit=crop&amp;w=1200&amp;q=85"/><span class="pc-year">2026</span><span class="pc-new">NEW</span></div>
+<div class="pc-body">
+<h3 data-i18n="k126">GestureTune — Hand-Gesture Music Player</h3>
+<p data-i18n="k139">A web music player controlled entirely by hand gestures through the webcam. Everything runs in the browser: no server, no paid API, and the camera video never leaves the device.</p>
+<ul class="pc-points">
+<li data-i18n="k156">Left hand: thumb–index distance controls the volume.</li>
+<li data-i18n="k157">Right hand: raise 1 to 5 fingers to pick a song.</li>
+<li data-i18n="k158">Fist to play/pause, swipe left/right to change track, thumbs-up to favourite.</li>
+<li data-i18n="k159">MediaPipe Hands reads 21 hand landmarks in real time, with debouncing, hand calibration, and a Web Audio API visualizer.</li>
+</ul>
+<div class="skills">
+<a>JavaScript</a><a>MediaPipe Hands</a><a>Computer Vision</a><a>Web Audio API</a><a>Machine Learning</a>
+</div>
+<button class="pc-detail" type="button"><span data-i18n="detailBtn">View details</span> <i class="fa-solid fa-arrow-right"></i></button>
+</div>
+</div>
+<div class="project-card reveal" data-category="apps">
+<div class="pc-img"><img alt="DokuShot documentation screenshot app" data-fallback="images/understanding.png" loading="lazy" src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&amp;fit=crop&amp;w=1200&amp;q=85"/><span class="pc-year">2026</span><span class="pc-new">NEW</span></div>
+<div class="pc-body">
+<h3 data-i18n="k127">DokuShot — Screenshot App for Work Documentation</h3>
+<p data-i18n="k140">A desktop screenshot tool that removes the screenshot → Paint → Word routine. Press Ctrl+Shift+S, select an area, annotate it, and paste it straight into Word.</p>
+<ul class="pc-points">
+<li data-i18n="k160">Global hotkey capture with area selection and markup boxes.</li>
+<li data-i18n="k161">Batch export of many screenshots at once to Word or PDF.</li>
+<li data-i18n="k162">Comes with a complete user guide.</li>
+</ul>
+<div class="skills">
+<a>Python</a><a>PySide6</a><a>Desktop App</a><a>Productivity</a><a>Automation</a>
+</div>
+<button class="pc-detail" type="button"><span data-i18n="detailBtn">View details</span> <i class="fa-solid fa-arrow-right"></i></button>
+</div>
+</div>
+<div class="project-card reveal" data-category="ml">
+<div class="pc-img"><img alt="Customer Segmentation and Classification" data-fallback="images/Cleveroad.jpg" loading="lazy" src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&amp;fit=crop&amp;w=1200&amp;q=85"/><span class="pc-year">2025</span></div>
+<div class="pc-body">
+<h3 data-i18n="k128">E-Customer Segmentation and Classification</h3>
+<p data-i18n="k141">Machine learning project for bank transaction analysis, customer segmentation, and customer classification using data preprocessing, feature engineering, and predictive modeling.</p>
+<ul class="pc-points">
+<li data-i18n="k163">EDA &amp; preprocessing (outliers, encoding, scaling) on banking transaction data.</li>
+<li data-i18n="k164">K-Means evaluated with Elbow Method &amp; Silhouette Score, plus Decision Tree classification compared with other algorithms.</li>
+</ul>
+<div class="skills">
+<a>Python</a><a>Numpy</a><a>Matplotlib</a><a>Scikit-learn</a><a>Seaborn</a><a>K-Means</a><a>Decision Tree</a>
+</div>
+<div class="btns">
+<a class="btn" data-i18n="k175" href="https://github.com/2200018178-FIRIZKI/Bank-Transaction-Analysis-with-Machine-Learning-Customer-Segmentation-and-Classification" rel="noopener" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+</div>
+<button class="pc-detail" type="button"><span data-i18n="detailBtn">View details</span> <i class="fa-solid fa-arrow-right"></i></button>
+</div>
+</div>
+<div class="project-card reveal" data-category="ai">
+<div class="pc-img"><img alt="CIFAR-10 Image Classification with Deep CNN" data-fallback="images/Image Classification.png" loading="lazy" src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&amp;fit=crop&amp;w=1200&amp;q=85"/></div>
+<div class="pc-body">
+<h3 data-i18n="k129">CIFAR-10 Image Classification with Deep CNN</h3>
+<p data-i18n="k142">Deep learning-based image classification project developed using TensorFlow and Keras, including data preprocessing, model training, and evaluation.</p>
+<div class="skills">
+<a>Python</a><a>Tensorflow</a><a>Numpy</a><a>Keras</a><a>Matplotlib</a><a>CNN</a>
+</div>
+<div class="btns">
+<a class="btn" data-i18n="k176" href="https://github.com/2200018178-FIRIZKI/Proyek-Klasifikasi-Gambar" rel="noopener" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+</div>
+<button class="pc-detail" type="button"><span data-i18n="detailBtn">View details</span> <i class="fa-solid fa-arrow-right"></i></button>
+</div>
+</div>
+<div class="project-card reveal" data-category="ai">
+<div class="pc-img"><img alt="Sentiment Analysis of 12,000 Free Fire Reviews" data-fallback="images/Analysis Free-Fire.jpeg" loading="lazy" src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&amp;fit=crop&amp;w=1200&amp;q=85"/></div>
+<div class="pc-body">
+<h3 data-i18n="k130">Sentiment Analysis of 12,000 Free Fire Reviews Using Machine Learning &amp; Deep Learning</h3>
+<p data-i18n="k143">Sentiment analysis system that classifies text into positive, negative, or neutral sentiments using natural language processing and machine learning.</p>
+<div class="skills">
+<a>Python</a><a>Pandas</a><a>Numpy</a><a>Scikit-learn</a><a>Matplotlib</a><a>Seaborn</a><a>K-Means</a><a>Random Forest</a>
+</div>
+<div class="btns">
+<a class="btn" data-i18n="k177" href="https://github.com/2200018178-FIRIZKI/Sistem-Analisis-Sentimen" rel="noopener" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+</div>
+<button class="pc-detail" type="button"><span data-i18n="detailBtn">View details</span> <i class="fa-solid fa-arrow-right"></i></button>
+</div>
+</div>
+<div class="project-card reveal" data-category="ml">
+<div class="pc-img"><img alt="Telco Customer Churn Prediction" data-fallback="images/Telco Customer Churn.jpg" loading="lazy" src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&amp;fit=crop&amp;w=1200&amp;q=85"/></div>
+<div class="pc-body">
+<h3 data-i18n="k131">End-to-End Machine Learning Pipeline for Telco Customer Churn Prediction</h3>
+<p data-i18n="k144">End-to-end machine learning pipeline for predicting telecom customer churn, including data preprocessing, feature engineering, model training, and model evaluation.</p>
+<div class="skills">
+<a>Python</a><a>Scikit-learn</a><a>Pandas</a><a>Matplotlib</a><a>Numpy</a><a>Machine Learning</a><a>Classification</a>
+</div>
+<div class="btns">
+<a class="btn" data-i18n="k178" href="https://github.com/2200018178-FIRIZKI/SML_SHAH-FIRIZKI-AZMI" rel="noopener" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+</div>
+<button class="pc-detail" type="button"><span data-i18n="detailBtn">View details</span> <i class="fa-solid fa-arrow-right"></i></button>
+</div>
+</div>
+<div class="project-card reveal" data-category="analysis">
+<div class="pc-img"><img alt="Dashboard Claim Asuransi" data-fallback="images/Claim Asuransi.jpeg" loading="lazy" src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&amp;fit=crop&amp;w=1200&amp;q=85"/></div>
+<div class="pc-body">
+<h3 data-i18n="k132">Dashboard Claim Asuransi</h3>
+<p data-i18n="k145">Interactive Tableau dashboard for analyzing insurance claim data through key metrics, trends, and visual insights.</p>
+<div class="skills">
+<a>Python</a><a>Tableau</a><a>Pandas</a><a>Matplotlib</a><a>Numpy</a><a>Machine Learning</a>
+</div>
+<div class="btns">
+<a class="btn tableau-btn" data-i18n="k179" href="https://public.tableau.com/app/profile/shah.firizki.azmi/viz/LabrakTerus/Dashboard1" rel="noopener" target="_blank"><i class="fas fa-chart-bar"></i> View Dashboard</a>
+</div>
+<button class="pc-detail" type="button"><span data-i18n="detailBtn">View details</span> <i class="fa-solid fa-arrow-right"></i></button>
+</div>
+</div>
+<div class="project-card reveal" data-category="ai">
+<div class="pc-img"><img alt="Chatbot JDIH" data-fallback="images/Chatboot.jpeg" loading="lazy" src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&amp;fit=crop&amp;w=1200&amp;q=85"/><span class="pc-year">2025</span></div>
+<div class="pc-body">
+<h3 data-i18n="k133">Chatbot JDIH</h3>
+<p data-i18n="k146">AI-powered legal document chatbot using Retrieval-Augmented Generation (RAG) to answer questions based on Indonesian legal documents.</p>
+<div class="skills">
+<a>Python</a><a>FastAPI</a><a>PostgreSQL</a><a>Qdrant</a><a>RAG</a><a>LLM</a><a>Docker</a>
+</div>
+<div class="btns">
+<a class="btn" data-i18n="k180" href="https://github.com/2200018178-FIRIZKI/Project_chatboot_JDIH" rel="noopener" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+</div>
+<button class="pc-detail" type="button"><span data-i18n="detailBtn">View details</span> <i class="fa-solid fa-arrow-right"></i></button>
+</div>
+</div>
+<div class="project-card reveal" data-category="analysis">
+<div class="pc-img"><img alt="E-Commerce Public Data Analysis" data-fallback="images/E-Commerce.jpeg" loading="lazy" src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&amp;fit=crop&amp;w=1200&amp;q=85"/><span class="pc-year">2025</span></div>
+<div class="pc-body">
+<h3 data-i18n="k134">E-Commerce Public Data Analysis &amp; Dashboard</h3>
+<p data-i18n="k147">Interactive E-Commerce data analysis dashboard covering data wrangling, EDA, and SMART business insights built with Streamlit.</p>
+<ul class="pc-points">
+<li data-i18n="k165">Business questions framed with the SMART method and answered through EDA.</li>
+<li data-i18n="k166">Data wrangling (gathering, assessing, cleaning) to handle missing values, duplicates, and inconsistencies.</li>
+<li data-i18n="k167">Interactive dashboard deployed to Streamlit Community Cloud.</li>
+</ul>
+<div class="skills">
+<a>Python</a><a>Streamlit</a><a>Tableau</a><a>Pandas</a><a>Matplotlib</a><a>Numpy</a><a>Machine Learning</a>
+</div>
+<div class="btns">
+<a class="btn" data-i18n="k181" href="https://github.com/2200018178-FIRIZKI/Analisis-Data-products-dataset" rel="noopener" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+<a class="btn btn-streamlit" data-i18n="k182" href="https://firizki-ecommerce-analysis.streamlit.app/" rel="noopener" target="_blank"><i class="fas fa-chart-line"></i> Streamlit</a>
+</div>
+<button class="pc-detail" type="button"><span data-i18n="detailBtn">View details</span> <i class="fa-solid fa-arrow-right"></i></button>
+</div>
+</div>
+<div class="project-card reveal" data-category="analysis">
+<div class="pc-img"><img alt="HR Analytics" data-fallback="images/HR.jpeg" loading="lazy" src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&amp;fit=crop&amp;w=1200&amp;q=85"/><span class="pc-year">2026</span></div>
+<div class="pc-body">
+<h3 data-i18n="k135">HR Analytics: Employee Attrition Prediction &amp; Dashboard</h3>
+<p data-i18n="k148">Interactive HR analytics dashboard built with Metabase to monitor employee attrition, workforce trends, and key business insights.</p>
+<ul class="pc-points">
+<li data-i18n="k168">Analyzed data from 1,000+ employees to identify the drivers of an attrition rate above 10%.</li>
+<li data-i18n="k169">Built a Metabase dashboard for real-time attrition monitoring by the HR team.</li>
+</ul>
+<div class="skills">
+<a>Python</a><a>Metabase Dashboard</a><a>Pandas</a><a>Business Intelligence</a><a>Data Analysis</a><a>HR Analytics</a>
+</div>
+<div class="btns">
+<a class="btn" data-i18n="k183" href="https://github.com/2200018178-FIRIZKI/Project_chatboot_JDIH" rel="noopener" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+</div>
+<button class="pc-detail" type="button"><span data-i18n="detailBtn">View details</span> <i class="fa-solid fa-arrow-right"></i></button>
+</div>
+</div>
+<div class="project-card reveal" data-category="ml">
+<div class="pc-img"><img alt="Student Dropout Prediction System" data-fallback="images/Dropout.jpeg" loading="lazy" src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&amp;fit=crop&amp;w=1200&amp;q=85"/></div>
+<div class="pc-body">
+<h3 data-i18n="k136">Student Dropout Prediction System</h3>
+<p data-i18n="k149">Student performance analytics and dropout prediction system combining business intelligence dashboards with machine learning.</p>
+<div class="skills">
+<a>Python</a><a>Scikit-learn</a><a>Pandas</a><a>Numpy</a><a>Machine Learning</a><a>Metabase Dashboard</a><a>Classification</a>
+</div>
+<div class="btns">
+<a class="btn" data-i18n="k184" href="https://github.com/2200018178-FIRIZKI/Proyek-Akhir-Penerapan-Data-Science-Indosat/tree/main" rel="noopener" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+</div>
+<button class="pc-detail" type="button"><span data-i18n="detailBtn">View details</span> <i class="fa-solid fa-arrow-right"></i></button>
+</div>
+</div>
+<div class="project-card reveal" data-category="ml analysis">
+<div class="pc-img"><img alt="Customer Segmentation &amp; Churn Analysis Dashboard" data-fallback="images/Customer.jpg" loading="lazy" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&amp;fit=crop&amp;w=1200&amp;q=85"/><span class="pc-year">2026</span></div>
+<div class="pc-body">
+<h3 data-i18n="k137">Customer Segmentation &amp; Churn Analysis Dashboard</h3>
+<p data-i18n="k150">Customer analytics project using RFM segmentation and churn analysis to identify customer behavior, retention opportunities, and business insights through interactive dashboards.</p>
+<ul class="pc-points">
+<li data-i18n="k170">End-to-end RFM segmentation pipeline with K-Means (4 optimal segments).</li>
+<li data-i18n="k171">Compared 3 models (Logistic Regression, Random Forest, Deep Neural Network); Random Forest performed best.</li>
+<li data-i18n="k172">Designed 2 interactive Tableau dashboards for customer segments and churn risk scores.</li>
+</ul>
+<div class="skills">
+<a>Python</a><a>Tableau Dashboard</a><a>Pandas</a><a>Matplotlib</a><a>Numpy</a><a>Machine Learning</a><a>RFM Analysis</a><a>Churn Analysis</a><a>Customer Analytics</a>
+</div>
+<div class="btns">
+<a class="btn tableau-btn" data-i18n="k185" href="https://public.tableau.com/app/profile/shah.firizki.azmi/viz/A25-CS320ShahFirizkiAzmi/Dashboard1A25-CS320?publish=yes" rel="noopener" target="_blank"><i class="fas fa-chart-bar"></i> View Dashboard</a>
+</div>
+<button class="pc-detail" type="button"><span data-i18n="detailBtn">View details</span> <i class="fa-solid fa-arrow-right"></i></button>
+</div>
+</div>
+</div>
+</div>
 </section>
-     </section>
-     <section class="services" id="services">
-        <p>SERVICES</p>
-        <h1>Our Features & Services</h1>
-        <hr>
-        <div class="services-container">
-
-    <div class="service-card">
-      <img src="images/understanding.png" alt="Business Understanding">
-      <h3>Business Understanding</h3>
-      <p>Understanding business objectives, defining analytical problems, and identifying key performance indicators (KPIs) before starting the analysis.</p>
-    </div>
-
-    <div class="service-card">
-      <img src="images/data-collection.png" alt="Data Collection">
-      <h3>Data Collection</h3>
-      <p>Gathering structured and unstructured data from databases, spreadsheets, APIs, or other relevant business sources.</p>
-    </div>
-
-    <div class="service-card">
-      <img src="images/data-cleansing.png" alt="Data Cleaning & Preparation">
-      <h3>Data Cleaning & Preparation</h3>
-      <p>Cleaning, transforming, handling missing values, removing duplicates, and preparing high-quality datasets for reliable analysis.</p>
-    </div>
-
-    <div class="service-card">
-      <img src="images/exploratory-analysis.png" alt="Exploratory Data Analysis (EDA)">
-      <h3>Exploratory Data Analysis (EDA)</h3>
-      <p>Exploring data using statistical analysis and visualization to discover trends, patterns, correlations, and anomalies.</p>
-    </div>
-
-    <div class="service-card">
-      <img src="images/dashboard.png" alt="Dashboard & Visualization">
-      <h3>Dashboard & Visualization</h3>
-      <p>Designing interactive dashboards and visual reports using Tableau, Power BI, Streamlit, or Metabase for better business monitoring.</p>
-    </div>
-
-    <div class="service-card">
-      <img src="images/machine-learning.png" alt="Predictive Analytics">
-      <h3>Predictive Analytics</h3>
-      <p>Building machine learning models for classification, regression, clustering, customer segmentation, and churn prediction when required.</p>
-    </div>
-
-    <div class="service-card">
-      <img src="images/creativity.png" alt="Business Insights">
-      <h3>Business Insights</h3>
-      <p>Translating analytical findings into meaningful insights that highlight opportunities, risks, and key business performance factors.</p>
-    </div>
-
-    <div class="service-card">
-      <img src="images/award.png" alt="Data-Driven Recommendations">
-      <h3>Data-Driven Recommendations</h3>
-      <p>Delivering clear recommendations and actionable strategies to support informed business decisions and continuous improvement.</p>
-    </div>
-
-  </div>
-     </section>
-     <section class="contact" id="contact">
-        <p>CONTACT</p>
-        <h1>Get in Touch with Us</h1>
-        <div class="contact-content">
-      <div class="contact-info slide-in-left">
-        <p>I'm always open to discuss exciting projects and new opportunities. Let's collaborate!</p>
-        <div class="contact-details">
-          <div class="contact-item">
-            <i class="fa-solid fa-envelope"></i>
-            <span>shahfirizkiazmi041103@gmail.com</span>
-          </div>
-          <div class="contact-item">
-            <i class="fa-solid fa-phone"></i>
-            <span>+62 85238746290</span>
-          </div>
-          <div class="contact-item">
-            <i class="fa-solid fa-location-dot"></i>
-            <span>Indonesia, Yogyakarta</span>
-          </div>
-        </div>
-
-        <div class="social-links">
-          <a href="https://github.com/2200018178-FIRIZKI" class="social-link" target="_blank">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/shah-firizki-azmi/" class="social-link" target="_blank">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-          <a href="https://wa.me/+6285238746290" class="social-link" target="_blank">
-            <i class="fa-brands fa-whatsapp"></i>
-          </a>
-        </div>
-      </div>
-
-      <div class="contact-form slide-in-right">
-        <form id="contact-form">
-          <div class="form-group">
-            <input type="text" placeholder="Your Name" required name="user_name">
-          </div>
-          <div class="form-group">
-            <input type="email" placeholder="Your Email" required name="user_email">
-          </div>
-          <div class="form-group">
-            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-          </div>
-          <button type="submit" class="btn-send">Send Message</button>
-        </form>
-      </div>
-    </div>
-     </section>
-     <footer class="footer">
-  <div class="footer-container">
-    <h2 class="footer-logo">Amine</h2>
-    <ul class="footer-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#project">Projects</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <div class="footer-social">
-      <a href="https://github.com/Saboo24" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/amine-hamzaoui-a2453a35b" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="https://wa.me/213554139526" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-    </div>
-    <p class="footer-copy">&copy; 2025 Amine. All Rights Reserved.</p>
-  </div>
+<!-- ================= EDUCATION & CERTIFICATIONS (from CV) ================= -->
+<section class="certifications section" id="certifications">
+<div class="container">
+<div class="section-head center reveal">
+<span class="sec-no">05</span>
+<p class="eyebrow" data-i18n="k19">EDUCATION &amp; CERTIFICATIONS</p>
+<h1 data-i18n="k26">Learning <span class="gradient-text">Never Stops</span></h1>
+</div>
+<div class="edu-card reveal">
+<div class="edu-media">
+<img alt="University campus" data-fallback="images/award.png" loading="lazy" src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&amp;fit=crop&amp;w=1600&amp;q=85"/>
+</div>
+<div class="edu-body">
+<span class="date" data-i18n="k186">2022 - 2026</span>
+<h3 data-i18n="k187">Universitas Ahmad Dahlan, Yogyakarta</h3>
+<h4 data-i18n="k188">Bachelor of Computer Science (S.Kom), Informatics</h4>
+<div class="gpa">
+<div class="gpa-ring" style="--p:92.5"><span>3.70</span></div>
+<p data-i18n="k189">GPA <strong>3.70</strong> / 4.00</p>
+</div>
+</div>
+</div>
+<div class="cert-grid">
+<div class="cert-card reveal">
+<div class="cert-icon"><i class="fa-solid fa-file-excel"></i></div>
+<div>
+<h3 data-i18n="k190">Microsoft Excel Basic to Advanced: Fullstack Intensive Bootcamp</h3>
+<p data-i18n="k195">MySkill · May 2026</p>
+<a class="cert-link" data-i18n="k200" href="https://drive.google.com/file/d/1ho2-DieBJT1pE2DsG6erYn261FwAMYJc/view?usp=sharing" rel="noopener" target="_blank">View <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+</div>
+</div>
+<div class="cert-card reveal">
+<div class="cert-icon"><i class="fa-solid fa-chart-line"></i></div>
+<div>
+<h3 data-i18n="k191">IDCamp 2025 – Data Scientist Expert</h3>
+<p data-i18n="k196">IDCamp Indosat Ooredoo Hutchison · May 2026</p>
+<a class="cert-link" data-i18n="k201" href="https://drive.google.com/file/d/1J1s-kLBzcezVAIaVYQpskUj_FUpjbnRx/view" rel="noopener" target="_blank">View <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+</div>
+</div>
+<div class="cert-card reveal">
+<div class="cert-icon"><i class="fa-brands fa-aws"></i></div>
+<div>
+<h3 data-i18n="k192">AWS Educate: Introduction to Generative AI</h3>
+<p data-i18n="k197">Amazon Web Services · July 2025</p>
+</div>
+</div>
+<div class="cert-card reveal">
+<div class="cert-icon"><i class="fa-solid fa-code"></i></div>
+<div>
+<h3 data-i18n="k193">Front-End and Back-End Developer</h3>
+<p data-i18n="k198">Coding Camp powered by DBS Foundation · July 2025</p>
+<a class="cert-link" data-i18n="k202" href="https://drive.google.com/file/d/1aaxBgb9qdkpDoR6oM5f_eLB-MNPXCoXD/view" rel="noopener" target="_blank">View <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+</div>
+</div>
+<div class="cert-card reveal">
+<div class="cert-icon"><i class="fa-solid fa-brain"></i></div>
+<div>
+<h3 data-i18n="k194">ASAH led by Dicoding (in association with Accenture)</h3>
+<p data-i18n="k199">Dicoding &amp; Accenture · March 2025</p>
+<a class="cert-link" data-i18n="k203" href="https://drive.google.com/file/d/1N1jz-JhbylRWbyoiuh9q593swRphOaR_/view" rel="noopener" target="_blank">View <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= SERVICES ================= -->
+<section class="services section" id="services">
+<div class="container">
+<div class="section-head center reveal">
+<span class="sec-no">06</span>
+<p class="eyebrow" data-i18n="k20">SERVICES</p>
+<h1 data-i18n="k27">Our Features &amp; <span class="gradient-text">Services</span></h1>
+</div>
+<div class="services-container">
+<div class="service-card reveal">
+<div class="svc-img"><img alt="Business Understanding" src="images/understanding.png"/></div>
+<h3 data-i18n="k204">Business Understanding</h3>
+<p data-i18n="k213">Understanding business objectives, defining analytical problems, and identifying key performance indicators (KPIs) before starting the analysis.</p>
+</div>
+<div class="service-card reveal">
+<div class="svc-img"><img alt="Data Collection" src="images/data-collection.png"/></div>
+<h3 data-i18n="k205">Data Collection</h3>
+<p data-i18n="k214">Gathering structured and unstructured data from databases, spreadsheets, APIs, or other relevant business sources.</p>
+</div>
+<div class="service-card reveal">
+<div class="svc-img"><img alt="Data Cleaning &amp; Preparation" src="images/data-cleansing.png"/></div>
+<h3 data-i18n="k206">Data Cleaning &amp; Preparation</h3>
+<p data-i18n="k215">Cleaning, transforming, handling missing values, removing duplicates, and preparing high-quality datasets for reliable analysis.</p>
+</div>
+<div class="service-card reveal">
+<div class="svc-img"><img alt="Exploratory Data Analysis (EDA)" src="images/exploratory-analysis.png"/></div>
+<h3 data-i18n="k207">Exploratory Data Analysis (EDA)</h3>
+<p data-i18n="k216">Exploring data using statistical analysis and visualization to discover trends, patterns, correlations, and anomalies.</p>
+</div>
+<div class="service-card reveal">
+<div class="svc-img"><img alt="Dashboard &amp; Visualization" src="images/dashboard.png"/></div>
+<h3 data-i18n="k208">Dashboard &amp; Visualization</h3>
+<p data-i18n="k217">Designing interactive dashboards and visual reports using Tableau, Power BI, Streamlit, or Metabase for better business monitoring.</p>
+</div>
+<div class="service-card reveal">
+<div class="svc-img"><img alt="Predictive Analytics" src="images/machine-learning.png"/></div>
+<h3 data-i18n="k209">Predictive Analytics</h3>
+<p data-i18n="k218">Building machine learning models for classification, regression, clustering, customer segmentation, and churn prediction when required.</p>
+</div>
+<div class="service-card reveal">
+<div class="svc-img"><img alt="Business Insights" src="images/creativity.png"/></div>
+<h3 data-i18n="k210">Business Insights</h3>
+<p data-i18n="k219">Translating analytical findings into meaningful insights that highlight opportunities, risks, and key business performance factors.</p>
+</div>
+<div class="service-card reveal">
+<div class="svc-img"><img alt="Data-Driven Recommendations" src="images/award.png"/></div>
+<h3 data-i18n="k211">Data-Driven Recommendations</h3>
+<p data-i18n="k220">Delivering clear recommendations and actionable strategies to support informed business decisions and continuous improvement.</p>
+</div>
+<div class="service-card reveal">
+<div class="svc-img svc-icon"><i class="fa-solid fa-gears"></i></div>
+<h3 data-i18n="k212">Process Automation</h3>
+<p data-i18n="k221">Automating routine work with Python: PDF/OCR extraction, Excel &amp; PDF report export, and Excel-to-PowerPoint generation so reports are faster and more accurate.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= CONTACT ================= -->
+<section class="contact section" id="contact">
+<div class="contact-bg" style="--img:url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=2000&amp;q=80')"></div>
+<div class="container">
+<div class="section-head center reveal">
+<span class="sec-no">07</span>
+<p class="eyebrow" data-i18n="k21">CONTACT</p>
+<h1 data-i18n="k28">Get in Touch <span class="gradient-text">with Us</span></h1>
+</div>
+<div class="contact-content">
+<div class="contact-info reveal">
+<p data-i18n="k222">I'm always open to discuss exciting projects and new opportunities. Let's collaborate!</p>
+<div class="contact-details">
+<a class="contact-item" href="mailto:shahfirizkiazmi041103@gmail.com">
+<i class="fa-solid fa-envelope"></i>
+<span data-i18n="k223">shahfirizkiazmi041103@gmail.com</span>
+</a>
+<a class="contact-item" href="https://wa.me/6285238746290" rel="noopener" target="_blank">
+<i class="fa-solid fa-phone"></i>
+<span data-i18n="k224">+62 85238746290</span>
+</a>
+<div class="contact-item">
+<i class="fa-solid fa-location-dot"></i>
+<span data-i18n="k225">Jakarta Barat, DKI Jakarta · Indonesia, Yogyakarta</span>
+</div>
+<a class="contact-item" href="https://www.linkedin.com/in/shah-firizki-azmi/" rel="noopener" target="_blank">
+<i class="fa-brands fa-linkedin"></i>
+<span data-i18n="k226">linkedin.com/in/shah-firizki-azmi</span>
+</a>
+<a class="contact-item" href="https://shahfirizki-portfolio.netlify.app" rel="noopener" target="_blank">
+<i class="fa-solid fa-globe"></i>
+<span data-i18n="k227">shahfirizki-portfolio.netlify.app</span>
+</a>
+</div>
+<div class="social-links">
+<a aria-label="GitHub" class="social-link" href="https://github.com/2200018178-FIRIZKI" rel="noopener" target="_blank"><i class="fa-brands fa-github"></i></a>
+<a aria-label="LinkedIn" class="social-link" href="https://www.linkedin.com/in/shah-firizki-azmi/" rel="noopener" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+<a aria-label="WhatsApp" class="social-link" href="https://wa.me/6285238746290" rel="noopener" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+</div>
+<div class="contact-form reveal">
+<form id="contact-form">
+<div class="form-group">
+<input data-i18n-ph="k260" name="user_name" placeholder="Your Name" required="" type="text"/>
+</div>
+<div class="form-group">
+<input data-i18n-ph="k261" name="user_email" placeholder="Your Email" required="" type="email"/>
+</div>
+<div class="form-group">
+<textarea data-i18n-ph="k262" name="message" placeholder="Your Message" required="" rows="5"></textarea>
+</div>
+<button class="btn-send" data-i18n="k228" type="submit"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+<p class="form-note" data-i18n="k229">This opens your email app with the message ready to send.</p>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+<div class="footer-container">
+<h2 class="footer-logo">Shah Firizki Azmi<span>.</span></h2>
+<p class="footer-role" data-i18n="k230">Data Analyst · Automation Developer</p>
+<ul class="footer-links">
+<li><a data-i18n="k231" href="#home">Home</a></li>
+<li><a data-i18n="k232" href="#about">About</a></li>
+<li><a data-i18n="k233" href="#skills">Skills</a></li>
+<li><a data-i18n="k234" href="#experience">Experience</a></li>
+<li><a data-i18n="k235" href="#project">Projects</a></li>
+<li><a data-i18n="k236" href="#certifications">Certifications</a></li>
+<li><a data-i18n="k237" href="#services">Services</a></li>
+<li><a data-i18n="k238" href="#contact">Contact</a></li>
+</ul>
+<div class="footer-social">
+<a aria-label="GitHub" href="https://github.com/2200018178-FIRIZKI" rel="noopener" target="_blank"><i class="fa-brands fa-github"></i></a>
+<a aria-label="LinkedIn" href="https://www.linkedin.com/in/shah-firizki-azmi/" rel="noopener" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+<a aria-label="WhatsApp" href="https://wa.me/6285238746290" rel="noopener" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+<p class="footer-copy" data-i18n="k239">© <span id="year">2026</span> Shah Firizki Azmi. All Rights Reserved. · Photos from <a href="https://unsplash.com" rel="noopener" target="_blank">Unsplash</a></p>
+</div>
 </footer>
-
-     <script src="main.js"></script>
+<button aria-label="Back to top" id="back-to-top"><i class="fa-solid fa-chevron-up"></i></button>
+<div class="pm" id="pm" aria-hidden="true">
+<div class="pm-backdrop" data-pm-close></div>
+<div class="pm-dialog" role="dialog" aria-modal="true" aria-labelledby="pm-title" tabindex="-1">
+<button class="pm-close" type="button" data-pm-close aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+<div class="pm-media" id="pm-media"></div>
+<div class="pm-body">
+<div class="pm-meta" id="pm-meta"></div>
+<h3 class="pm-title" id="pm-title"></h3>
+<p class="pm-desc" id="pm-desc"></p>
+<div class="pm-block" id="pm-hi-wrap"><h4 data-i18n="pmHi">Highlights</h4><ul class="pc-points" id="pm-points"></ul></div>
+<div class="pm-block"><h4 data-i18n="pmTech">Tech stack</h4><div class="skills" id="pm-skills"></div></div>
+<div class="btns pm-links" id="pm-links"></div>
+</div>
+</div>
+</div>
+<script src="main.js"></script>
 </body>
 </html>
