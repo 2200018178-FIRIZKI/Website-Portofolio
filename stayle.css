@@ -1525,3 +1525,9 @@ html.pm-lock, html.pm-lock body { overflow: hidden; }
 @media (min-width: 821px) { .t-lang { right: auto; } }
 
 a.pc-detail { text-decoration: none; }
+
+/* v12: typing caret for the hero tagline */
+.script { white-space: nowrap; }
+.script-caret { display: inline-block; width: .06em; height: .78em; margin-left: .06em; vertical-align: -.04em; background: currentColor; border-radius: 2px; transform: skewX(-8deg); animation: scaret 1s steps(1) infinite; }
+@keyframes scaret { 50% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .script-caret { display: none; } }

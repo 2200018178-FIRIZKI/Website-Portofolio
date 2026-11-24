@@ -926,6 +926,29 @@ window.__pm = PM;
 const onScrollBar = () => document.body.classList.toggle('scrolled', scrollY > 30);
 addEventListener('scroll', onScrollBar, { passive: true }); onScrollBar();
 
+/* hero tagline: types data-analyst <-> fullstack-dev in the handwritten script */
+(() => {
+  const el = $('#script-txt'); if (!el) return;
+  const WORDS2 = ['data-analyst', 'fullstack-dev'];
+  let wi = 0;
+  const wait = ms => new Promise(r => setTimeout(r, ms));
+  async function run() {
+    await wait(RM ? 3000 : 3600);
+    for (;;) {
+      const next = WORDS2[(wi + 1) % WORDS2.length];
+      if (RM) { el.textContent = next; }
+      else {
+        while (el.textContent.length) { el.textContent = el.textContent.slice(0, -1); await wait(42); }
+        await wait(260);
+        for (let i = 1; i <= next.length; i++) { el.textContent = next.slice(0, i); await wait(70 + Math.random() * 50); }
+      }
+      wi = (wi + 1) % WORDS2.length;
+      await wait(2600);
+    }
+  }
+  run();
+})();
+
 /* 3D tilt + spotlight */
 if (!RM && matchMedia('(hover: hover)').matches) {
   projectCards.forEach(card => {
