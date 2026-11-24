@@ -1496,3 +1496,32 @@ html.pm-lock, html.pm-lock body { overflow: hidden; }
 .rope-shadow { filter: none; stroke: rgba(0,0,0,.18); transform: translate(4px, 6px); }
 .sleeve { backdrop-filter: none; -webkit-backdrop-filter: none; background: linear-gradient(140deg, rgba(255,255,255,.42), rgba(255,255,255,.16) 45%, rgba(255,255,255,.3)); }
 .idcard { will-change: transform; backface-visibility: hidden; }
+
+/* ---------- v10: confidential project badge ---------- */
+.pc-conf { background: #1a1917; color: var(--brass); border: 1px solid rgba(201, 169, 110, .6); box-shadow: none; }
+.btn-locked { cursor: default; opacity: .85; border-style: dashed !important; }
+.btn-locked:hover { transform: none !important; }
+
+/* ---------- v10: tidy mobile header (one bar: home · EN/ID · menu) ---------- */
+@media (max-width: 820px) {
+  .ui::before {
+    content: ""; position: fixed; left: 0; right: 0; top: 0; height: 56px; pointer-events: none;
+    background: rgba(26, 25, 23, .9); border-bottom: 1px solid rgba(201, 169, 110, .2);
+    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    opacity: 0; transition: opacity .3s ease;
+  }
+  body.scrolled .ui::before { opacity: 1; }
+  .tag { top: 12px; height: 32px; }
+  .t1 { left: 12px; right: auto; top: 12px; }
+  .t2, .t4 { display: none; }
+  .t3 { left: auto; right: 12px; top: 12px; }
+  .t-lang { left: auto; translate: none; top: 12px; right: 88px; height: 32px; }
+  body.is-case .t-lang { top: 12px; right: 12px !important; }
+}
+
+/* ---------- v11: fullstack service cards ---------- */
+.svc-dev .svc-img { background: #1a1917; }
+.svc-dev .svc-img i { font-size: 26px; color: #c9a96e; }
+@media (min-width: 821px) { .t-lang { right: auto; } }
+
+a.pc-detail { text-decoration: none; }
