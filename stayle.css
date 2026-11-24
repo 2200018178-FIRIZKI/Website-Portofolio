@@ -1531,3 +1531,22 @@ a.pc-detail { text-decoration: none; }
 .script-caret { display: inline-block; width: .06em; height: .78em; margin-left: .06em; vertical-align: -.04em; background: currentColor; border-radius: 2px; transform: skewX(-8deg); animation: scaret 1s steps(1) infinite; }
 @keyframes scaret { 50% { opacity: 0; } }
 @media (prefers-reduced-motion: reduce) { .script-caret { display: none; } }
+
+/* v13: the laptop dive starts from a button, not from scrolling */
+.hint {
+  pointer-events: auto; cursor: pointer; flex-direction: row; gap: 10px;
+  padding: calc(var(--n) * 12) calc(var(--n) * 20); border-radius: 999px;
+  background: rgba(26, 25, 23, .72); border: 1px solid rgba(201, 169, 110, .6); color: #f4efe6;
+  font: 700 calc(var(--n) * 12) / 1 var(--font); letter-spacing: .16em; opacity: 1;
+  backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+  transition: background .3s, color .3s, transform .3s;
+}
+.hint i { width: auto; height: auto; background: none; overflow: visible; order: 0; color: var(--brass); font-size: 1.15em; }
+.hint i::after { content: none; }
+.hint:hover, .hint:focus-visible { background: var(--brass); color: #1a1917; outline: none; }
+.hint:hover i { color: #1a1917; }
+body:not(.is-case) .screen-hit { display: block; }
+@media (max-width: 820px) { .hint { bottom: 18px; font-size: 11px; padding: 11px 18px; } }
+
+.hint { white-space: nowrap; }
+@media (max-width: 820px) { .hero-meta { bottom: 72px; } .hint { bottom: 16px; } }
